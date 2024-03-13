@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dragging Papers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <button style="font-size:24px" id="mute-toggle">Button <i class="material-icons">speaker</i></button>
+
+    <audio autoplay loop>
+        <source src="Audio/Hoga jaha pe andhere ka sawera ,lovely status video.mp3" type="audio/mpeg">
+
+
+    </audio>
+
+
+    <div class="paper image" style="padding: 10px;">
+        <img src=" Images/image.jpeg" alt="" height="500px " style="margin-top: 110px;" ;>
+        <p>Stop being this much . . . <br>&#128525; &#128525; &#128525; Thik hai... </p>
+
+    </div>
+
+    <div class="paper" style="height: 700px;">
+        <p>So again. .</p>
+        <p>Jesi ho vesi rahna . . .</p>
+        <p>Miss Perfect</p>
+        <p>Aur haan ek cheez aur </p>
+
+    </div>
+    <div class="paper" style="rotate: -50deg; height: 300px;">
+        <p>You are awesome </p>
+        <p> pata h na. . . </p>
+    </div>
+    <div class="paper" style="height: 100px; rotate: 50deg; ">
+        <p>
+            Khaduss
+        </p>
+
+    </div>
+
+    </div>
+    <div class="paper" style="rotate: 20deg; height: 400px;">
+        <p>Oyy</p>
+        <p>Drag This</p>
+    </div>
+
+    <script src="mobile.js">
+        window.addEventListener('DOMContentLoaded', function () {
+            var audio = window.querySelector('audio');
+
+            var toggleButton = window.getElementById('mute-toggle');
+            toggleButton.addEventListener('click', function () {
+                if (audio.paused) {
+                    audio.play();
+                    toggleButton.textContent = 'Mute';
+                } else {
+                    audio.pause();
+                    toggleButton.textContent = 'Unmute';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
